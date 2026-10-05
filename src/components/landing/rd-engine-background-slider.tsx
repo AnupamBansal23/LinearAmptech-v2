@@ -133,7 +133,7 @@ export function RdEngineBackgroundSlider() {
             }}
           >
             <motion.div
-              className="absolute -inset-[3%] bg-cover bg-no-repeat brightness-[0.94] contrast-[0.96] saturate-[1.05] sepia-[0.14]"
+              className="absolute -inset-[3%] bg-cover bg-no-repeat"
               data-image-description={slide.description}
               style={{
                 backgroundImage: `url(${slide.src})`,
@@ -159,20 +159,6 @@ export function RdEngineBackgroundSlider() {
           </motion.div>
         );
       })}
-      <div
-        className="absolute inset-0 mix-blend-soft-light"
-        style={{
-          background:
-            "linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 16%, transparent) 0%, transparent 46%, color-mix(in srgb, var(--color-primary) 24%, transparent) 100%)",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 76% 48%, transparent 0%, color-mix(in srgb, var(--color-bg) 14%, transparent) 55%, color-mix(in srgb, var(--color-bg) 42%, transparent) 100%)",
-        }}
-      />
     </div>
   );
 }

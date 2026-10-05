@@ -15,19 +15,19 @@ const applicationImageSets: Record<
   Record<ImageThemeMode, string>
 > = {
   "Defense and Aerospace": {
-    new: "/assets/applications/defense-aerospace-dark.png",
+    new: "/assets/applications/defense-aerospace-v3.png",
     old: "/assets/applications/defense-aerospace-v2.png",
   },
   "Satellite Communications": {
-    new: "/assets/applications/satellite-communications-dark.png",
+    new: "/assets/applications/satellite-communications-v3.png",
     old: "/assets/applications/satellite-communications-v2.png",
   },
   "5G/6G Wireless Infrastructure": {
-    new: "/assets/applications/wireless-6g-dark.png",
+    new: "/assets/applications/wireless-6g-v3.png",
     old: "/assets/applications/wireless-6g-v2.png",
   },
   "Radar and AESA System": {
-    new: "/assets/applications/mimo-radar-dark.png",
+    new: "/assets/applications/mimo-radar-v3.png",
     old: "/assets/applications/mimo-radar-v2.png",
   },
 };
@@ -53,24 +53,24 @@ function ApplicationCard({
     applicationObjectPositions[application.title] ?? "object-center";
 
   return (
-    <article className="surface-card surface-card-interactive group relative flex h-full flex-col p-3">
-      <div className="media-well aspect-[16/11]">
+    <article className="group relative flex flex-col">
+      <div className="relative aspect-[16/11] overflow-hidden bg-[color:var(--color-media-well)]">
         <Image
           src={imagePath}
           alt={`${application.title} application visual`}
           fill
           sizes="(min-width: 768px) 45vw, 100vw"
           className={cn(
-            "object-cover transition-transform duration-700 ease-out group-hover:scale-105",
+            "object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]",
             objectPosition,
           )}
         />
       </div>
-      <div className="flex flex-1 flex-col px-2.5 pt-4 pb-2.5">
-        <h3 className="font-heading text-xl font-semibold tracking-tight text-[color:var(--color-text)]">
+      <div className="flex flex-1 flex-col border-t border-[color:var(--color-border)] px-1 pt-5 pb-2">
+        <h3 className="font-heading text-[23px] font-semibold tracking-tight text-[color:var(--color-text)]">
           {application.title}
         </h3>
-        <p className="mt-2 mb-4 text-sm leading-relaxed text-[color:var(--color-text-muted)] xl:text-lg xl:leading-8">
+        <p className="mt-2.5 mb-5 text-sm leading-relaxed text-[color:var(--color-text-muted)] xl:text-lg xl:leading-7">
           {application.description}
         </p>
       </div>
@@ -102,7 +102,7 @@ export function ApplicationsShowcase({
           </p>
         </div>
 
-        <div className="mt-16 grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid items-start gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           {applications.map((application) => (
             <ApplicationCard
               key={application.title}

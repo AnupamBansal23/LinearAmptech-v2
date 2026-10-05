@@ -51,7 +51,7 @@ const homepageProductCategories = [
     description:
       "Hybrid MIC modules and GaN-on-SiC MMIC PA chips for high-power RF and mm-wave systems.",
     href: "/products/rf/power-amplifiers",
-    image: "/assets/products/categories/power-amplifier-families.png",
+    image: "/assets/products/categories/power-amplifier-families-v3.png",
     alt: "RF and mm-wave power amplifier module hardware",
   },
   {
@@ -60,7 +60,7 @@ const homepageProductCategories = [
     description:
       "Fully integrated transmitter, receiver, and radar front-end chips from the mm-wave portfolio.",
     href: "/products/rf-mmwave-front-end-modules",
-    image: "/assets/products/categories/integrated-rfic.png",
+    image: "/assets/products/categories/integrated-rfic-v3.png",
     alt: "RF and mm-wave front-end module chip portfolio",
   },
   {
@@ -69,7 +69,7 @@ const homepageProductCategories = [
     description:
       "Phase-shifting IC capability for phased arrays, radar front ends, and reconfigurable RF systems.",
     href: "/products/8-bit-phase-shifter-chip",
-    image: "/assets/products/categories/phase-shifter.png",
+    image: "/assets/products/categories/phase-shifter-v3.png",
     alt: "Phase shifter IC package and circuit hardware",
   },
 ] as const;
@@ -171,23 +171,23 @@ function ProductsSection() {
           title="RF front-end Product Portfolio."
           intro="Browse the portfolio by category, from high-power amplifier hardware to integrated mm-wave RFICs and beamforming ICs."
         />
-        <div className="mt-10 grid items-stretch gap-6 md:grid-cols-3 lg:mt-14">
+        <div className="mt-10 grid items-stretch gap-x-7 gap-y-11 md:grid-cols-3 lg:mt-14 lg:gap-x-9">
           {homepageProductCategories.map((category) => (
             <Link
               key={category.title}
               href={category.href}
-              className="surface-card surface-card-interactive group flex h-full min-h-[30rem] flex-col p-3"
+              className="group flex h-full flex-col"
             >
-              <div className="media-well aspect-[16/10]">
+              <div className="relative aspect-[16/10] overflow-hidden bg-[color:var(--color-media-well)]">
                 <Image
                   src={category.image}
                   alt={category.alt}
                   fill
                   sizes="(min-width: 1024px) 31vw, (min-width: 768px) 33vw, 100vw"
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
                 />
               </div>
-              <div className="flex flex-1 flex-col px-4 pb-4 pt-7">
+              <div className="flex flex-1 flex-col border-t border-[color:var(--color-border)] px-1 pb-2 pt-5">
                 <p className="font-mono text-[12px] font-medium uppercase tracking-[0.2em] text-[color:var(--color-primary-deep)]">
                   {category.eyebrow}
                 </p>
@@ -216,11 +216,13 @@ function ProductsSection() {
 export function LandingContentSections() {
   return (
     <>
+      <ProductsSection />
+
       <CompanySection>
         <Reveal>
           <SectionHeader
             label="About us"
-            title="Engineering RF semiconductor products from research to deployment."
+            title="Amplyfing the future of RF semiconductors for India and for the world."
             intro="Linear-AmpTech transforms RF and semiconductor research into scalable products and deployable solutions across communication, radar, defense, aerospace, and next-generation wireless systems."
           />
           <Link
@@ -235,7 +237,6 @@ export function LandingContentSections() {
           </Link>
         </Reveal>
       </CompanySection>
-      <ProductsSection />
 
       <TechnologyShowcase platforms={technologyPlatforms} />
 
@@ -286,7 +287,10 @@ export function LandingContentSections() {
               development capability across the RF semiconductor value chain.
             </p>
 
-            <div className="mt-9 grid max-w-3xl gap-3 sm:grid-cols-3">
+            <dl
+              aria-label="R&D capabilities"
+              className="surface-card mt-9 grid max-w-3xl divide-y divide-[color:var(--color-border-strong)] overflow-hidden sm:grid-cols-3 sm:divide-x sm:divide-y-0"
+            >
               {[
                 ["Architecture", "RFIC, MMIC, MIC modules"],
                 ["Technology", "GaN, CMOS, SiGe"],
@@ -294,21 +298,17 @@ export function LandingContentSections() {
               ].map(([label, value]) => (
                 <div
                   key={label}
-                  className="surface-card relative overflow-hidden py-3.5 pl-5 pr-4"
+                  className="min-w-0 px-5 py-4 sm:px-4 sm:py-5 xl:px-5"
                 >
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-y-0 left-0 w-[3px] bg-[color:var(--color-primary)]"
-                  />
-                  <p className="font-mono text-[12px] uppercase tracking-[0.2em] text-[color:var(--color-primary-deep)]">
+                  <dt className="font-mono text-[12px] uppercase tracking-[0.2em] text-[color:var(--color-primary-deep)]">
                     {label}
-                  </p>
-                  <p className="mt-1.5 text-sm font-semibold text-[color:var(--color-text)] xl:text-lg">
+                  </dt>
+                  <dd className="mt-1.5 text-sm font-semibold text-[color:var(--color-text)] xl:text-lg">
                     {value}
-                  </p>
+                  </dd>
                 </div>
               ))}
-            </div>
+            </dl>
           </div>
         </Reveal>
       </section>

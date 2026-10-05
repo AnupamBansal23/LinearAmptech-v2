@@ -160,7 +160,7 @@ export function WorkflowExplorer() {
               aria-label="RF development workflow stages"
               aria-orientation="vertical"
               onKeyDown={onKeyDown}
-              className="flex snap-x snap-mandatory gap-2 overflow-x-auto pb-2 [scrollbar-width:none] lg:h-full lg:flex-col lg:gap-1.5 lg:overflow-visible lg:pb-0 [&::-webkit-scrollbar]:hidden"
+              className="workflow-stage-list relative flex snap-x snap-mandatory gap-2 overflow-x-auto pb-2 lg:h-full lg:flex-col lg:gap-1.5 lg:overflow-visible lg:pb-0"
             >
               {workflowSteps.map((item, index) => {
                 const isActive = active === index;
@@ -180,32 +180,28 @@ export function WorkflowExplorer() {
                     onMouseEnter={() => select(index)}
                     onFocus={() => setActive(index)}
                     className={cn(
-                      "group relative flex shrink-0 snap-start flex-col rounded-lg border px-4 py-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-primary-deep)] lg:w-full lg:flex-1",
-                      isActive
-                        ? "border-[color:var(--color-border)] bg-[color:var(--color-surface)] shadow-[var(--shadow-card)]"
-                        : "border-transparent hover:bg-[color:var(--color-surface)]",
+                      "group relative z-10 flex min-w-[9rem] shrink-0 snap-start flex-col gap-2 rounded-lg px-4 py-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-primary-deep)] lg:min-w-0 lg:w-full lg:flex-1 lg:flex-row lg:items-start lg:gap-3 lg:px-2 lg:py-1.5",
                     )}
                   >
-                    <span
-                      aria-hidden="true"
-                      className={cn(
-                        "absolute inset-y-0 left-0 hidden w-1 rounded-l-[var(--radius-card)] transition-colors lg:block",
-                        isActive
-                          ? "bg-[color:var(--color-primary)]"
-                          : "bg-transparent",
-                      )}
-                    />
-                    <span className="flex items-center gap-3">
+                    {index < count - 1 ? (
                       <span
-                        className={cn(
-                          "font-mono text-xs tabular-nums transition-colors",
-                          isActive
-                            ? "text-[color:var(--color-primary-deep)]"
-                            : "text-[color:var(--color-text-muted)]",
-                        )}
-                      >
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
+                        aria-hidden="true"
+                        className="pointer-events-none absolute top-[1.625rem] left-[1.875rem] right-[-2.375rem] z-0 h-px bg-[color:var(--color-border-strong)] lg:top-7 lg:left-[1.375rem] lg:right-auto lg:h-[calc(100%+0.375rem)] lg:w-px"
+                      />
+                    ) : null}
+                    <span
+                      className={cn(
+                        "relative z-10 grid size-7 shrink-0 place-items-center rounded-full border font-mono text-[11px] tabular-nums transition-colors lg:mt-2",
+                        isActive
+                          ? "border-[color:var(--color-primary)] bg-[color:var(--color-primary)] text-[color:var(--color-on-primary)]"
+                          : "border-[color:var(--color-border-strong)] bg-[color:var(--color-bg)] text-[color:var(--color-text-muted)]",
+                      )}
+                    >
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span
+                      className={cn("flex min-w-0 flex-1 flex-col px-3 py-2.5")}
+                    >
                       <span
                         className={cn(
                           "font-heading text-sm font-semibold leading-snug transition-colors xl:text-lg",
@@ -216,12 +212,12 @@ export function WorkflowExplorer() {
                       >
                         {item.title}
                       </span>
+                      {isActive ? (
+                        <span className="mt-2 max-w-sm text-xs leading-5 text-[color:var(--color-text-muted)] xl:text-lg xl:leading-8">
+                          {item.description}
+                        </span>
+                      ) : null}
                     </span>
-                    {isActive ? (
-                      <span className="mt-2 max-w-sm text-xs leading-5 text-[color:var(--color-text-muted)] xl:text-lg xl:leading-8">
-                        {item.description}
-                      </span>
-                    ) : null}
                   </button>
                 );
               })}
