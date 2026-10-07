@@ -17,6 +17,7 @@ export type RfPowerAmplifierTableRow = {
   gainDb: string;
   modeOfOperation: string;
   slug?: string;
+  datasheetHref?: string;
 };
 
 export type RfPowerAmplifierCategory = {
@@ -268,6 +269,16 @@ export const rfPowerAmplifierTableRows: RfPowerAmplifierTableRow[] = [
     efficiency: "45 (sat.) / 35 (av.)",
     gainDb: "50-55",
     modeOfOperation: "Doherty",
+  },
+  {
+    partNumber: "LAMP-PACAB-0.4-0.52-50W",
+    centerFrequencyGhz: "0.4-0.52",
+    outputPowerW: "45-54",
+    efficiency: "51.3-58.9%",
+    gainDb: "36.5-37.4",
+    modeOfOperation: "Not specified",
+    datasheetHref:
+      "/assets/products/rf-power-amplifiers/datasheets/LAMP-PACAB-0.4-0.52-50W_Datasheet_.pdf",
   },
   {
     partNumber: "LAMP-DPA0P75-50W",
