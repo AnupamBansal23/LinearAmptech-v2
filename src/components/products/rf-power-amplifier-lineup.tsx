@@ -39,6 +39,16 @@ export function RfPowerAmplifierLineup() {
                   Details
                   <ChevronRight className="size-3.5" aria-hidden="true" />
                 </Link>
+              ) : row.datasheetHref ? (
+                <a
+                  href={row.datasheetHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-[color:var(--color-primary-deep)] transition-colors hover:text-[color:var(--color-primary-ink)]"
+                >
+                  Details
+                  <ChevronRight className="size-3.5" aria-hidden="true" />
+                </a>
               ) : null}
             </div>
             <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3">
@@ -139,6 +149,16 @@ export function RfPowerAmplifierLineup() {
                       Details
                       <ChevronRight className="size-4" aria-hidden="true" />
                     </Link>
+                  ) : row.datasheetHref ? (
+                    <a
+                      href={row.datasheetHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 font-semibold text-[color:var(--color-primary-deep)] transition-colors hover:text-[color:var(--color-primary-ink)]"
+                    >
+                      Details
+                      <ChevronRight className="size-4" aria-hidden="true" />
+                    </a>
                   ) : (
                     "-"
                   )}
