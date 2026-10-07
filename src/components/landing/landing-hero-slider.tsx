@@ -81,7 +81,7 @@ const SLIDE_DURATION = 5200;
 export function LandingHeroSlider() {
   const { mode } = useImageTheme();
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
-  const [isSliderPaused, setIsSliderPaused] = useState(true);
+  const [isSliderPaused, setIsSliderPaused] = useState(false);
   const [isNavHovered, setIsNavHovered] = useState(false);
   const isPlaybackPaused = isSliderPaused || isNavHovered;
   const heroSlides = useMemo<HeroSlide[]>(() => {
