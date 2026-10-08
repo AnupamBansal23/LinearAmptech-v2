@@ -20,20 +20,20 @@ import {
 import { WorkflowSection } from "@/components/landing/workflow-section";
 
 // Saffron-tinted card variants, shown only on the landing grid; each lives
-// beside its product's assets as card-saffron.png.
+// beside its product's assets as card-saffron.webp.
 const homepageProductImages: Partial<Record<Product["slug"], string>> = {
   "hybrid-mic-pa-modules":
-    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/card-saffron-v2.png",
+    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/card-saffron-v2.webp",
   "fully-integrated-c-ku-band-pa-chip":
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/card-saffron-v6.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/card-saffron-v6.webp",
   "fully-integrated-transmitter-chip":
-    "/assets/products/rf-mmwave-front-end-modules/transmitter/card-saffron-v2.png",
+    "/assets/products/rf-mmwave-front-end-modules/transmitter/card-saffron-v2.webp",
   "fully-integrated-receiver-chip":
-    "/assets/products/rf-mmwave-front-end-modules/receiver/card-saffron-v2.png",
+    "/assets/products/rf-mmwave-front-end-modules/receiver/card-saffron-v2.webp",
   "fully-integrated-radar-front-end-chip":
-    "/assets/products/rf-mmwave-front-end-modules/radar/card-saffron-v2.png",
+    "/assets/products/rf-mmwave-front-end-modules/radar/card-saffron-v2.webp",
   "8-bit-phase-shifter-chip":
-    "/assets/products/phase-shifter/card-saffron-v2.png",
+    "/assets/products/phase-shifter/card-saffron-v2.webp",
 };
 
 const technologyPlatforms: TechnologyPlatform[] = ipPlatforms.map(
@@ -51,7 +51,7 @@ const homepageProductCategories = [
     description:
       "Hybrid MIC modules and GaN-on-SiC MMIC PA chips for high-power RF and mm-wave systems.",
     href: "/products/rf/power-amplifiers",
-    image: "/assets/products/categories/power-amplifier-families-v3.png",
+    image: "/assets/products/categories/power-amplifier-families-v3.webp",
     alt: "RF and mm-wave power amplifier module hardware",
   },
   {
@@ -60,7 +60,7 @@ const homepageProductCategories = [
     description:
       "Fully integrated transmitter, receiver, and radar front-end chips from the mm-wave portfolio.",
     href: "/products/rf-mmwave-front-end-modules",
-    image: "/assets/products/categories/integrated-rfic-v3.png",
+    image: "/assets/products/categories/integrated-rfic-v3.webp",
     alt: "RF and mm-wave front-end module chip portfolio",
   },
   {
@@ -69,7 +69,7 @@ const homepageProductCategories = [
     description:
       "Phase-shifting IC capability for phased arrays, radar front ends, and reconfigurable RF systems.",
     href: "/products/8-bit-phase-shifter-chip",
-    image: "/assets/products/categories/phase-shifter-v3.png",
+    image: "/assets/products/categories/phase-shifter-v3.webp",
     alt: "Phase shifter IC package and circuit hardware",
   },
 ] as const;

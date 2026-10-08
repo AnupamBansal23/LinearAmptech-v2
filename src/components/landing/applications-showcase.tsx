@@ -15,20 +15,20 @@ const applicationImageSets: Record<
   Record<ImageThemeMode, string>
 > = {
   "Defense and Aerospace": {
-    new: "/assets/applications/defense-aerospace-v3.png",
-    old: "/assets/applications/defense-aerospace-v2.png",
+    new: "/assets/applications/defense-aerospace-v3.webp",
+    old: "/assets/applications/defense-aerospace-v2.webp",
   },
   "Satellite Communications": {
-    new: "/assets/applications/satellite-communications-v3.png",
-    old: "/assets/applications/satellite-communications-v2.png",
+    new: "/assets/applications/satellite-communications-v3.webp",
+    old: "/assets/applications/satellite-communications-v2.webp",
   },
   "5G/6G Wireless Infrastructure": {
-    new: "/assets/applications/wireless-6g-v3.png",
-    old: "/assets/applications/wireless-6g-v2.png",
+    new: "/assets/applications/wireless-6g-v3.webp",
+    old: "/assets/applications/wireless-6g-v2.webp",
   },
   "Radar and AESA System": {
-    new: "/assets/applications/mimo-radar-v3.png",
-    old: "/assets/applications/mimo-radar-v2.png",
+    new: "/assets/applications/mimo-radar-v3.webp",
+    old: "/assets/applications/mimo-radar-v2.webp",
   },
 };
 

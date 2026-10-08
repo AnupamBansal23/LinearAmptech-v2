@@ -11,73 +11,73 @@ import {
 } from "lucide-react";
 
 export const assets = {
-  technologyGanHemt: "/assets/technology/gan-hemt.png",
-  technologySigeBicmos: "/assets/technology/sige-bicmos.png",
-  technologySiCmos: "/assets/technology/si-cmos.png",
+  technologyGanHemt: "/assets/technology/gan-hemt.webp",
+  technologySigeBicmos: "/assets/technology/sige-bicmos.webp",
+  technologySiCmos: "/assets/technology/si-cmos.webp",
   hybridMicBenchTest:
-    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/bench-test.png",
+    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/bench-test.webp",
   hybridMicCard:
-    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/card-saffron-v2.png",
+    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/card-saffron-v2.webp",
 
   hybridMicModulePhoto:
-    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/module-photo.png",
+    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/module-photo.webp",
   cKuPaChipRender:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/chip-render.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/chip-render.webp",
   transceiverCollage:
-    "/assets/products/rf-mmwave-front-end-modules/transceiver-collage.png",
+    "/assets/products/rf-mmwave-front-end-modules/transceiver-collage.webp",
 
   receiverCard:
-    "/assets/products/rf-mmwave-front-end-modules/receiver/card-saffron-v2.png",
+    "/assets/products/rf-mmwave-front-end-modules/receiver/card-saffron-v2.webp",
   transmitterCard:
-    "/assets/products/rf-mmwave-front-end-modules/transmitter/card-saffron-v2.png",
+    "/assets/products/rf-mmwave-front-end-modules/transmitter/card-saffron-v2.webp",
   noiseFigure:
-    "/assets/products/rf-mmwave-front-end-modules/radar/noise-figure.png",
+    "/assets/products/rf-mmwave-front-end-modules/radar/noise-figure.webp",
   gainPerformance:
-    "/assets/products/rf-mmwave-front-end-modules/radar/gain-performance.png",
+    "/assets/products/rf-mmwave-front-end-modules/radar/gain-performance.webp",
   radarCard:
-    "/assets/products/rf-mmwave-front-end-modules/radar/card-saffron-v2.png",
+    "/assets/products/rf-mmwave-front-end-modules/radar/card-saffron-v2.webp",
   frontendReceiverChipPhoto:
-    "/assets/products/rf-mmwave-front-end-modules/receiver/chip-photo.png",
+    "/assets/products/rf-mmwave-front-end-modules/receiver/chip-photo.webp",
   frontendReceiverLayout:
-    "/assets/products/rf-mmwave-front-end-modules/receiver/layout.png",
+    "/assets/products/rf-mmwave-front-end-modules/receiver/layout.webp",
   frontendReceiverEmSimulation1:
-    "/assets/products/rf-mmwave-front-end-modules/receiver/em-simulation-1.png",
+    "/assets/products/rf-mmwave-front-end-modules/receiver/em-simulation-1.webp",
   frontendReceiverEmSimulation2:
-    "/assets/products/rf-mmwave-front-end-modules/receiver/em-simulation-2.png",
+    "/assets/products/rf-mmwave-front-end-modules/receiver/em-simulation-2.webp",
   frontendTransmitterLayout:
-    "/assets/products/rf-mmwave-front-end-modules/transmitter/layout.png",
+    "/assets/products/rf-mmwave-front-end-modules/transmitter/layout.webp",
   frontendTransmitterEmSimulation:
-    "/assets/products/rf-mmwave-front-end-modules/transmitter/em-simulation.png",
+    "/assets/products/rf-mmwave-front-end-modules/transmitter/em-simulation.webp",
   frontendRadarSystemLayout:
-    "/assets/products/rf-mmwave-front-end-modules/radar/system-layout.png",
+    "/assets/products/rf-mmwave-front-end-modules/radar/system-layout.webp",
   frontendRadarChipLayout:
-    "/assets/products/rf-mmwave-front-end-modules/radar/chip-layout.png",
-  phaseShifterChipPhoto: "/assets/products/phase-shifter/chip-photo.jpg",
-  phaseShifterCard: "/assets/products/phase-shifter/card-saffron-v2.png",
-  phaseFreq: "/assets/products/phase-shifter/phase-freq.jpg",
-  gainFreq: "/assets/products/phase-shifter/gain-freq.jpeg",
+    "/assets/products/rf-mmwave-front-end-modules/radar/chip-layout.webp",
+  phaseShifterChipPhoto: "/assets/products/phase-shifter/chip-photo.webp",
+  phaseShifterCard: "/assets/products/phase-shifter/card-saffron-v2.webp",
+  phaseFreq: "/assets/products/phase-shifter/phase-freq.webp",
+  gainFreq: "/assets/products/phase-shifter/gain-freq.webp",
   cKuPaPackagedChip:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-chip.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-chip.webp",
   cKuPaPackagedChipFocused:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-chip.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-chip.webp",
   cKuPaPackagedHardware:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-hardware.jpg",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-hardware.webp",
   cKuPaPackagedHardwareFocused:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-hardware-focused.jpg",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/packaged-hardware-focused.webp",
   cKuPaCard:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/card-saffron-v6.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/card-saffron-v6.webp",
   hybridMicGanNews:
-    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/gan-module-news.jpg",
+    "/assets/products/rf-power-amplifiers/hybrid-mic-pa-modules/gan-module-news.webp",
   cKuPaLayoutQfn44:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/layout-qfn44.jpg",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/layout-qfn44.webp",
   cKuPaPerformanceQfn44:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/performance-qfn44.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/performance-qfn44.webp",
   cKuPaPerformanceQfn56:
-    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/performance-qfn56.png",
-  defense: "/assets/applications/defense-aerospace-dark.png",
-  sixG: "/assets/applications/wireless-6g-dark.png",
-  mimoRadar: "/assets/applications/mimo-radar-dark.png",
-  risActive: "/assets/applications/satellite-communications-dark.png",
+    "/assets/products/rf-power-amplifiers/c-ku-band-pa-chip/performance-qfn56.webp",
+  defense: "/assets/applications/defense-aerospace-dark.webp",
+  sixG: "/assets/applications/wireless-6g-dark.webp",
+  mimoRadar: "/assets/applications/mimo-radar-dark.webp",
+  risActive: "/assets/applications/satellite-communications-dark.webp",
 } as const;
 
 export type Capability = {

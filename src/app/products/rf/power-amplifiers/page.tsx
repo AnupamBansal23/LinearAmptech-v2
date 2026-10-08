@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { HeroThreads } from "@/components/layout/hero-threads";
 import { Reveal } from "@/components/landing/reveal";
 import { ProductListingCard } from "@/components/products/product-listing-card";
+import { productListingImages } from "@/components/products/product-listing-images";
 import {
   rfPowerAmplifierCategories,
   rfPowerAmplifierIntro,
@@ -32,15 +33,16 @@ export default function RfPowerAmplifiersPage() {
 
       <section className="bg-[color:var(--color-surface-soft)] py-24">
         <Reveal className="container mx-auto max-w-7xl px-4 lg:px-4">
-          <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2">
             {rfPowerAmplifierCategories.map((category) => (
               <ProductListingCard
                 key={category.slug}
                 title={category.title}
                 href={category.href}
-                image={category.image}
+                image={productListingImages[category.slug] ?? category.image}
                 alt={category.alt}
                 band={category.operatingBand}
+                variant="flat"
               />
             ))}
           </div>

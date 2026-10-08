@@ -3,11 +3,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 /**
- * Product listing card matching the homepage ProductPortfolioCard anatomy:
- * dark surface-card, a warm `.product-plate` inspection well for the ivory
- * studio renders, and a saffron mono band eyebrow. The plate's cream matte
- * blends the photo's own studio backdrop so the render reads as a measured
- * capture instead of a bright hole punched in the dark card.
+ * Product listing card. The default style is retained for category and detail
+ * listings; the flat variant is used on the all-products page for edge-to-edge
+ * photography without a card plate.
  */
 export function ProductListingCard({
   title,
@@ -15,17 +13,31 @@ export function ProductListingCard({
   image,
   alt,
   band,
+  variant = "default",
 }: {
   title: string;
   href: string;
   image?: string;
   alt?: string;
   band?: string;
+  variant?: "default" | "flat";
 }) {
+  const isFlat = variant === "flat";
+
   return (
-    <article className="surface-card surface-card-interactive group relative flex h-full flex-col p-3">
-      <div className="product-plate aspect-[16/10] p-2.5">
-        <div className="relative h-full w-full overflow-hidden rounded-md">
+    <article
+      className={`group relative flex h-full flex-col ${isFlat ? "" : "surface-card surface-card-interactive p-3"}`}
+    >
+      <div
+        className={
+          isFlat
+            ? "media-well aspect-[16/10] overflow-hidden"
+            : "product-plate aspect-[16/10] p-2.5"
+        }
+      >
+        <div
+          className={`relative h-full w-full overflow-hidden ${isFlat ? "" : "rounded-md"}`}
+        >
           {image ? (
             <Image
               src={image}
@@ -37,7 +49,9 @@ export function ProductListingCard({
           ) : null}
         </div>
       </div>
-      <div className="flex flex-1 flex-col gap-2.5 px-2.5 pt-5 pb-2.5">
+      <div
+        className={`flex flex-1 flex-col gap-2.5 ${isFlat ? "pt-5" : "px-2.5 pt-5 pb-2.5"}`}
+      >
         <h3 className="min-h-[2.75em] font-heading text-[21px] font-semibold leading-snug tracking-tight text-[color:var(--color-text)]">
           <Link
             href={href}

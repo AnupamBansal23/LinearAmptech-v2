@@ -4,6 +4,7 @@ import { products, productBands } from "@/components/landing/data";
 import { HeroThreads } from "@/components/layout/hero-threads";
 import { Reveal } from "@/components/landing/reveal";
 import { ProductListingCard } from "@/components/products/product-listing-card";
+import { productListingImages } from "@/components/products/product-listing-images";
 
 export const metadata: Metadata = {
   title: "RF & mm-Wave Front End Modules | Linear Amptech",
@@ -49,9 +50,10 @@ export default function RfMmWaveFrontEndModulesPage() {
                 key={product.slug}
                 title={product.name}
                 href={`/products/${product.slug}`}
-                image={product.image}
+                image={productListingImages[product.slug] ?? product.image}
                 alt={product.alt}
                 band={productBands[product.slug]?.label}
+                variant="flat"
               />
             ))}
           </div>

@@ -18,27 +18,28 @@ export const rfPassiveComponents: RfPassiveComponent[] = [
     name: "Power Divider / Combiner : KuPD-1",
     shortName: "Power Divider-KuPD-1",
     summary: "4-way, 0 deg, WR62, 12.85 GHz to 14.50 GHz, SMA / WR62.",
-    heroImage: "/assets/products/rf-passive-components/kupd-1/hero.jpg",
-    cardImage: "/assets/products/rf-passive-components/kupd-1/card-saffron.png",
+    heroImage: "/assets/products/rf-passive-components/kupd-1/hero.webp",
+    cardImage:
+      "/assets/products/rf-passive-components/kupd-1/card-saffron.webp",
     diagrams: [
       {
-        src: "/assets/products/rf-passive-components/kupd-1/diagram-1.jpg",
+        src: "/assets/products/rf-passive-components/kupd-1/diagram-1.webp",
         alt: "KuPD-1 passive RF product diagram 1",
       },
       {
-        src: "/assets/products/rf-passive-components/kupd-1/diagram-2.jpg",
+        src: "/assets/products/rf-passive-components/kupd-1/diagram-2.webp",
         alt: "KuPD-1 passive RF product diagram 2",
       },
       {
-        src: "/assets/products/rf-passive-components/kupd-1/diagram-3.jpg",
+        src: "/assets/products/rf-passive-components/kupd-1/diagram-3.webp",
         alt: "KuPD-1 passive RF product diagram 3",
       },
       {
-        src: "/assets/products/rf-passive-components/kupd-1/diagram-4.jpg",
+        src: "/assets/products/rf-passive-components/kupd-1/diagram-4.webp",
         alt: "KuPD-1 passive RF product diagram 4",
       },
       {
-        src: "/assets/products/rf-passive-components/kupd-1/diagram-5.jpg",
+        src: "/assets/products/rf-passive-components/kupd-1/diagram-5.webp",
         alt: "KuPD-1 passive RF product diagram 5",
       },
     ],
@@ -67,24 +68,24 @@ export const rfPassiveComponents: RfPassiveComponent[] = [
     name: "5G Base Station Filter : 5GBPF-1",
     shortName: "5G Base Station Filter : 5GBPF-1",
     summary: "3300-3700 MHz, WR229, rectangular waveguide cavity filter.",
-    heroImage: "/assets/products/rf-passive-components/5gbpf-1/hero.jpg",
+    heroImage: "/assets/products/rf-passive-components/5gbpf-1/hero.webp",
     cardImage:
-      "/assets/products/rf-passive-components/5gbpf-1/card-saffron.png",
+      "/assets/products/rf-passive-components/5gbpf-1/card-saffron.webp",
     diagrams: [
       {
-        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-1.jpg",
+        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-1.webp",
         alt: "5GBPF-1 passive RF product diagram 1",
       },
       {
-        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-2.jpg",
+        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-2.webp",
         alt: "5GBPF-1 passive RF product diagram 2",
       },
       {
-        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-3.jpg",
+        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-3.webp",
         alt: "5GBPF-1 passive RF product diagram 3",
       },
       {
-        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-4.jpg",
+        src: "/assets/products/rf-passive-components/5gbpf-1/diagram-4.webp",
         alt: "5GBPF-1 passive RF product diagram 4",
       },
     ],
@@ -109,28 +110,28 @@ export const rfPassiveComponents: RfPassiveComponent[] = [
     name: "Power Splitter / Combiner : UHFPD-1",
     shortName: "Power Splitter-UHFPD-1",
     summary: "2-way, 0 deg, 50 ohm, 10 MHz to 450 MHz, 1/4 W, SMA / SMD.",
-    heroImage: "/assets/products/rf-passive-components/uhfpd-1/hero.jpg",
+    heroImage: "/assets/products/rf-passive-components/uhfpd-1/hero.webp",
     cardImage:
-      "/assets/products/rf-passive-components/uhfpd-1/card-saffron.png",
+      "/assets/products/rf-passive-components/uhfpd-1/card-saffron.webp",
     diagrams: [
       {
-        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-1.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-1.webp",
         alt: "UHFPD-1 passive RF product diagram 1",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-2.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-2.webp",
         alt: "UHFPD-1 passive RF product diagram 2",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-3.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-3.webp",
         alt: "UHFPD-1 passive RF product diagram 3",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-4.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-4.webp",
         alt: "UHFPD-1 passive RF product diagram 4",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-5.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-1/diagram-5.webp",
         alt: "UHFPD-1 passive RF product diagram 5",
       },
     ],
@@ -162,28 +163,28 @@ export const rfPassiveComponents: RfPassiveComponent[] = [
     name: "Power Splitter / Combiner : UHFPD-2",
     shortName: "Power Splitter-UHFPD-2",
     summary: "2-way, 0 deg, 50 ohm, 10 MHz to 1000 MHz, 1/4 W, SMA / SMD.",
-    heroImage: "/assets/products/rf-passive-components/uhfpd-2/hero.jpg",
+    heroImage: "/assets/products/rf-passive-components/uhfpd-2/hero.webp",
     cardImage:
-      "/assets/products/rf-passive-components/uhfpd-2/card-saffron.png",
+      "/assets/products/rf-passive-components/uhfpd-2/card-saffron.webp",
     diagrams: [
       {
-        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-1.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-1.webp",
         alt: "UHFPD-2 passive RF product diagram 1",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-2.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-2.webp",
         alt: "UHFPD-2 passive RF product diagram 2",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-3.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-3.webp",
         alt: "UHFPD-2 passive RF product diagram 3",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-4.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-4.webp",
         alt: "UHFPD-2 passive RF product diagram 4",
       },
       {
-        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-5.jpg",
+        src: "/assets/products/rf-passive-components/uhfpd-2/diagram-5.webp",
         alt: "UHFPD-2 passive RF product diagram 5",
       },
     ],
