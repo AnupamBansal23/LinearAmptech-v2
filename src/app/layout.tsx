@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   title: "Linear-AmpTech | RF Front-End Semiconductor Technologies",
   description:
     "Linear-AmpTech develops GaN power amplifier modules, CMOS/BiCMOS RFICs, mm-wave transceivers, active antennas, packaging, and validation solutions.",
+  icons: {
+    icon: [{ url: "/assets/brand/site-icon.webp", type: "image/webp" }],
+  },
   keywords: [
     "Linear-AmpTech",
     "RF front-end technologies",

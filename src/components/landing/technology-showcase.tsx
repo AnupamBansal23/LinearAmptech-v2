@@ -19,16 +19,16 @@ const technologyImageSets: Record<
   Record<ImageThemeMode, string>
 > = {
   "III-V GaN Technology": {
-    new: "/assets/technology/gan-hemt-platform-v3.png",
-    old: "/assets/technology/gan-hemt-platform-v2.png",
+    new: "/assets/technology/gan-hemt-platform-v3.webp",
+    old: "/assets/technology/gan-hemt-platform-v2.webp",
   },
   "Si CMOS Technology": {
-    new: "/assets/technology/si-cmos-platform-v3.png",
-    old: "/assets/technology/si-cmos-platform-v2.png",
+    new: "/assets/technology/si-cmos-platform-v3.webp",
+    old: "/assets/technology/si-cmos-platform-v2.webp",
   },
   "SiGe BiCMOS Technology": {
-    new: "/assets/technology/sige-bicmos-platform-v3.png",
-    old: "/assets/technology/sige-bicmos-platform-v2.png",
+    new: "/assets/technology/sige-bicmos-platform-v3.webp",
+    old: "/assets/technology/sige-bicmos-platform-v2.webp",
   },
 };
 

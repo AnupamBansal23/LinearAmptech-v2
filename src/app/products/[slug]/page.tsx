@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 
 import { products, productBands } from "@/components/landing/data";
 import { Reveal } from "@/components/landing/reveal";
+import { productListingImages } from "@/components/products/product-listing-images";
 
 const allProducts = [...products];
 
@@ -44,6 +45,8 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
   }
 
   const band = productBands[slug];
+  const useFlatPhotoHero = Boolean(productListingImages[slug]);
+  const heroImage = productListingImages[slug] ?? product.image;
 
   const heroStrip = [
     band ? { label: "Operating band", value: band.label } : null,
@@ -92,13 +95,15 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
                 />
               </Link>
             </div>
-            <div className="media-frame">
-              {/* Warm inspection plate: the ivory studio render sits on a cream
-                  matte framed by the dark bezel, reading as a measured capture. */}
-              <div className="product-plate aspect-[4/3] p-3">
-                <div className="relative h-full w-full overflow-hidden rounded-lg">
+            <div
+              className={
+                useFlatPhotoHero ? "media-well aspect-[4/3]" : "media-frame"
+              }
+            >
+              {useFlatPhotoHero ? (
+                <div className="relative h-full w-full overflow-hidden">
                   <Image
-                    src={product.image}
+                    src={heroImage}
                     alt={product.alt}
                     fill
                     priority
@@ -106,7 +111,20 @@ export default async function ProductDetailsPage({ params }: ProductPageProps) {
                     className="object-cover"
                   />
                 </div>
-              </div>
+              ) : (
+                <div className="product-plate aspect-[4/3] p-3">
+                  <div className="relative h-full w-full overflow-hidden rounded-lg">
+                    <Image
+                      src={heroImage}
+                      alt={product.alt}
+                      fill
+                      priority
+                      sizes="(min-width: 1024px) 45vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </Reveal>

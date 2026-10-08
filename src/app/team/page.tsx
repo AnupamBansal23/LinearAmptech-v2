@@ -24,19 +24,19 @@ const companyWriteups = [
   {
     label: "About us",
     title: "Who we are",
-    image: "/assets/team/who-we-are-dark.png",
+    image: "/assets/team/who-we-are-dark.webp",
     body: "Linearised Amplifier Technology & Services Pvt. Ltd. (Linear-AmpTech) is founded and driven by innovative minds from IIT Roorkee, one of India's premier technical institutes. The deep-tech startup targets cyber-physical system design with a focus on radio-frequency circuit and system design.",
   },
   {
     label: "Vision",
     title: "Our vision",
-    image: "/assets/team/vision-dark.png",
+    image: "/assets/team/vision-dark.webp",
     body: "To drive disruptive innovation in cyber-physical systems, delivering high-performance, indigenous technology solutions that secure global traction.",
   },
   {
     label: "Mission",
     title: "Our mission",
-    image: "/assets/team/mission-dark.png",
+    image: "/assets/team/mission-dark.webp",
     body: "The company is focused on innovation to cater to technical challenges in radio-frequency electronics targeting cyber-physical systems, with strengths in RF front-end component design, GaN-based MMIC and high-power modules, and CMOS/BiCMOS RFIC IP cores with silicon validation.",
   },
 ];
@@ -46,14 +46,14 @@ const team: TeamMember[] = [
     name: "Dr. Karun Rawat",
     role: "Founder & Chairman",
     group: "Leadership",
-    image: "/assets/team/headshots/karun-rawat.jpeg",
+    image: "/assets/team/headshots/karun-rawat.webp",
     linkedinUrl: "https://www.linkedin.com/in/karun-rawat-b732784b/",
   },
   {
     name: "Dr. Meenakshi Rawat",
     role: "Founder & Director",
     group: "Leadership",
-    image: "/assets/team/headshots/meenakshi-rawat.png",
+    image: "/assets/team/headshots/meenakshi-rawat.webp",
     linkedinUrl: "https://www.linkedin.com/in/meenakshi-rawat-66675a66/",
   },
   {
@@ -67,7 +67,7 @@ const team: TeamMember[] = [
     name: "Dr. Aditya Pal",
     role: "Chief Excecutive Officer",
     group: "Leadership",
-    image: "/assets/team/headshots/aditya-pal.jpg",
+    image: "/assets/team/headshots/aditya-pal.webp",
     imagePosition: "50% 0%",
     linkedinUrl: "https://www.linkedin.com/in/dr-aditya-pal-a31872ab/",
   },
@@ -75,14 +75,14 @@ const team: TeamMember[] = [
   //   name: "Dr. Garima Shukla",
   //   role: "Senior RF Design Engineer",
   //   group: "Development",
-  //   image: "/assets/team/headshots/garima-shukla.jpg",
+  //   image: "/assets/team/headshots/garima-shukla.webp",
   //   linkedinUrl: "",
   // },
   // {
   //   name: "Dr. Pawan Shukla",
   //   role: "Senior RF Design Engineer",
   //   group: "Development",
-  //   image: "/assets/team/headshots/pawan-shukla.jpeg",
+  //   image: "/assets/team/headshots/pawan-shukla.webp",
   //   linkedinUrl: "",
   // },
 ];
@@ -115,7 +115,7 @@ function MemberCard({
 }) {
   return (
     <Reveal className={`h-full ${className}`}>
-      <article className="surface-card surface-card-interactive group flex h-full flex-col overflow-hidden rounded-[var(--radius-card)]">
+      <article className="surface-card group flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] transition-shadow duration-200 hover:shadow-[var(--shadow-card-hover)]">
         <div className="relative aspect-square overflow-hidden bg-[color:var(--color-surface-soft)]">
           <Image
             src={member.image}
@@ -223,7 +223,7 @@ export default function TeamPage() {
           <div className="mt-10 grid gap-5 lg:grid-cols-3">
             {companyWriteups.map((item) => (
               <Reveal key={item.label} className="h-full">
-                <article className="surface-card surface-card-interactive group relative flex h-full min-h-[28rem] flex-col overflow-hidden rounded-[var(--radius-card)] p-7 sm:p-8">
+                <article className="surface-card group relative flex h-full min-h-[28rem] flex-col overflow-hidden rounded-[var(--radius-card)] p-7 transition-shadow duration-200 hover:shadow-[var(--shadow-card-hover)] sm:p-8">
                   {/* Decorative dark-theme card imagery: keep the text side
                       protected while letting the right-side detail read. */}
                   <Image

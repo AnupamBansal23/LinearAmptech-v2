@@ -33,7 +33,7 @@ export function SiteFooter() {
             >
               <span className="grid h-14 w-[112px] place-items-left ">
                 <Image
-                  src="/assets/brand/logo.png"
+                  src="/assets/brand/logo.webp"
                   alt="Linear-AmpTech logo"
                   width={104}
                   height={58}

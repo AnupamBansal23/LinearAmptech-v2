@@ -32,45 +32,45 @@ type HeroImage = Pick<HeroSlide, "imagePath" | "imageAlt">;
 const heroImageSets: Record<ImageThemeMode, HeroImage[]> = {
   new: [
     {
-      imagePath: "/assets/hero/rf-front-end-hero-v2.png",
+      imagePath: "/assets/hero/rf-front-end-hero-v2.webp",
       imageAlt: "RF front-end technology hero visual",
     },
     {
-      imagePath: "/assets/hero/gan-pa-module-hero-v2.png",
+      imagePath: "/assets/hero/gan-pa-module-hero-v2.webp",
       imageAlt: "GaN power amplifier module hero visual",
     },
     {
-      imagePath: "/assets/hero/cmos-rfic-development-hero-v2.png",
+      imagePath: "/assets/hero/cmos-rfic-development-hero-v2.webp",
       imageAlt: "Si CMOS RFIC development hero visual",
     },
     {
-      imagePath: "/assets/hero/sige-rfic-development-hero-v2.png",
+      imagePath: "/assets/hero/sige-rfic-development-hero-v2.webp",
       imageAlt: "SiGe BiCMOS RFIC development hero visual",
     },
     {
-      imagePath: "/assets/hero/mmwave-packaging-hero-v3.png",
+      imagePath: "/assets/hero/mmwave-packaging-hero-v3.webp",
       imageAlt: "mm-wave packaging integration hero visual",
     },
   ],
   old: [
     {
-      imagePath: "/assets/hero/rfic-chip.png",
+      imagePath: "/assets/hero/rfic-chip.webp",
       imageAlt: "Linear-AmpTech RFIC chip hero visual",
     },
     {
-      imagePath: "/assets/hero/rf-lab-validation.png",
+      imagePath: "/assets/hero/rf-lab-validation.webp",
       imageAlt: "GaN power amplifier module hero visual",
     },
     {
-      imagePath: "/assets/hero/silicon-wafer.png",
+      imagePath: "/assets/hero/silicon-wafer.webp",
       imageAlt: "Si CMOS RFIC development hero visual",
     },
     {
-      imagePath: "/assets/hero/transmitter-47ghz.png",
+      imagePath: "/assets/hero/transmitter-47ghz.webp",
       imageAlt: "47 GHz transmitter chip hero visual",
     },
     {
-      imagePath: "/assets/hero/silicon-wafer.png",
+      imagePath: "/assets/hero/silicon-wafer.webp",
       imageAlt: "Semiconductor wafer hero visual",
     },
   ],

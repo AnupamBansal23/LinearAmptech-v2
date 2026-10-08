@@ -22,7 +22,7 @@ const CROSSFADE_SECONDS = 1.6;
 
 const rdEngineSlides: RdEngineSlide[] = [
   {
-    src: "/assets/rd-engine/wafer-probe-lab.png",
+    src: "/assets/rd-engine/wafer-probe-lab.webp",
     description:
       "Wafer-level RF probing environment for semiconductor characterization and device research.",
     objectPosition: "62% 50%",
@@ -36,7 +36,7 @@ const rdEngineSlides: RdEngineSlide[] = [
     },
   },
   {
-    src: "/assets/rd-engine/rf-validation-bench.png",
+    src: "/assets/rd-engine/rf-validation-bench.webp",
     description:
       "RF validation bench with instrumentation for packaged hardware measurement and prototype bring-up.",
     objectPosition: "70% 50%",
@@ -50,7 +50,7 @@ const rdEngineSlides: RdEngineSlide[] = [
     },
   },
   {
-    src: "/assets/rd-engine/mmic-inspection-lab.png",
+    src: "/assets/rd-engine/mmic-inspection-lab.webp",
     description:
       "MMIC inspection and RF probe station setup for device-level semiconductor R&D.",
     objectPosition: "68% 50%",
@@ -64,7 +64,7 @@ const rdEngineSlides: RdEngineSlide[] = [
     },
   },
   {
-    src: "/assets/rd-engine/mmwave-validation-lab.png",
+    src: "/assets/rd-engine/mmwave-validation-lab.webp",
     description:
       "mmWave prototype validation bench with shielded fixture, RF connectors, and measurement instrumentation.",
     objectPosition: "72% 50%",

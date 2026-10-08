@@ -198,18 +198,12 @@ export function CareersBoard() {
                   onClick={() => {
                     setSelectedJob(job);
                   }}
-                  className={`group/card relative flex flex-col overflow-hidden rounded-lg border bg-[color:var(--color-surface)] p-5 text-left shadow-[var(--shadow-card)] transition-[box-shadow,border-color] duration-300 hover:shadow-[var(--shadow-card-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-primary-deep)]/25 ${
+                  className={`group/card relative flex flex-col overflow-hidden rounded-lg p-5 text-left transition-[background-color,box-shadow,border-color] duration-300 hover:shadow-[var(--shadow-card-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-primary-deep)]/25 ${
                     visibleSelectedJob?.id === job.id
-                      ? "border-[color:var(--color-border)] shadow-[var(--shadow-card-hover)]"
-                      : "border-[color:var(--color-border)]"
+                      ? "border border-[color:var(--color-border-strong)] bg-[color:var(--color-surface-raised)] shadow-[var(--shadow-card-hover)]"
+                      : "bg-transparent"
                   }`}
                 >
-                  {visibleSelectedJob?.id === job.id ? (
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-y-0 left-0 w-0.5 bg-[color:var(--color-primary)]"
-                    />
-                  ) : null}
                   <h2 className="font-heading text-2xl font-semibold tracking-normal text-[color:var(--color-text)]">
                     {job.title}
                   </h2>

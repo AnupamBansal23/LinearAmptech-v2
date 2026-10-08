@@ -12,6 +12,7 @@ import { products, productBands } from "@/components/landing/data";
 import { HeroThreads } from "@/components/layout/hero-threads";
 import { Reveal } from "@/components/landing/reveal";
 import { ProductListingCard } from "@/components/products/product-listing-card";
+import { productListingImages } from "@/components/products/product-listing-images";
 import { rfPowerAmplifierCategories } from "@/components/products/rf-power-amplifiers-data";
 
 export const metadata: Metadata = {
@@ -61,7 +62,7 @@ const productCategories: ProductCategory[] = [
     items: rfPowerAmplifierCategories.map((category) => ({
       title: category.title,
       href: category.href,
-      image: category.image,
+      image: productListingImages[category.slug] ?? category.image,
       operatingBand: category.operatingBand,
     })),
   },
@@ -75,7 +76,7 @@ const productCategories: ProductCategory[] = [
     items: frontEndModules.map((product) => ({
       title: product.name,
       href: `/products/${product.slug}`,
-      image: product.image,
+      image: productListingImages[product.slug] ?? product.image,
       operatingBand: productBands[product.slug]?.label,
     })),
   },
@@ -91,7 +92,8 @@ const productCategories: ProductCategory[] = [
           {
             title: phaseShifter.name,
             href: `/products/${phaseShifter.slug}`,
-            image: phaseShifter.image,
+            image:
+              productListingImages[phaseShifter.slug] ?? phaseShifter.image,
             operatingBand: productBands[phaseShifter.slug]?.label,
           },
         ]
@@ -127,7 +129,7 @@ export default function ProductsPage() {
                   <Link
                     key={category.title}
                     href={category.href}
-                    className="group flex min-h-[22rem] flex-col rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-surface)] p-7 shadow-[var(--shadow-card)] transition-[box-shadow,border-color] duration-300 hover:border-[color:var(--color-accent-border)] hover:shadow-[var(--shadow-card-hover)]"
+                    className="group flex min-h-[22rem] flex-col p-7"
                   >
                     <div className="grid size-12 place-items-center rounded-lg border border-[color:var(--color-accent-border)] bg-[color:var(--color-accent-wash)] text-[color:var(--color-primary-ink)]">
                       <Icon className="size-5" aria-hidden="true" />
@@ -195,6 +197,7 @@ export default function ProductsPage() {
                             href={item.href}
                             image={item.image}
                             band={item.operatingBand}
+                            variant="flat"
                           />
                         ))}
                       </div>
